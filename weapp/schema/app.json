@@ -1,0 +1,156 @@
+{
+  "type": "object",
+  "required": [
+    "pages",
+    "sitemapLocation"
+  ],
+  "properties": {
+    "debug": {
+      "type": "boolean"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "usingComponents": {
+      "type": "object",
+      "patternProperties": {
+        "": {
+          "type": "string"
+        }
+      }
+    },
+    "permission": {
+      "type": "object",
+      "properties": {
+        "scope.userLocation": {
+          "type": "object",
+          "required": [
+            "desc"
+          ],
+          "properties": {
+            "desc": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "window": {
+      "type": "object",
+      "properties": {
+        "pageOrientation": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "portrait",
+            "landscape"
+          ]
+        },
+        "backgroundColorTop": {
+          "type": "string"
+        },
+        "backgroundColorBottom": {
+          "type": "string"
+        },
+        "onReachBottomDistance": {
+          "type": "number"
+        },
+        "enablePullDownRefresh": {
+          "type": "boolean"
+        },
+        "backgroundTextStyle": {
+          "type": "string",
+          "enum": [
+            "dark",
+            "light"
+          ]
+        },
+        "navigationBarTitleText": {
+          "type": "string"
+        },
+        "navigationStyle": {
+          "type": "string",
+          "enum": [
+            "default",
+            "custom"
+          ]
+        },
+        "backgroundColor": {
+          "type": "string"
+        },
+        "navigationBarTextStyle": {
+          "type": "string",
+          "enum": [
+            "black",
+            "white"
+          ]
+        },
+        "navigationBarBackgroundColor": {
+          "type": "string"
+        }
+      }
+    },
+    "tabBar": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "color": {
+          "type": "string"
+        },
+        "selectedColor": {
+          "type": "string"
+        },
+        "backgroundColor": {
+          "type": "string"
+        },
+        "borderStyle": {
+          "type": "string",
+          "enum": [
+            "black",
+            "white"
+          ]
+        },
+        "position": {
+          "type": "string",
+          "enum": [
+            "top",
+            "bottom"
+          ]
+        },
+        "custom": {
+          "type": "boolean"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "pagePath",
+              "text"
+            ],
+            "properties": {
+              "pagePath": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "iconPath": {
+                "type": "string"
+              },
+              "selectedIconPath": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sitemapLocation": {
+      "type": "string"
+    }
+  }
+}

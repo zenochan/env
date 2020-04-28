@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "navigationBarBackgroundColor": {
+      "type": "string"
+    },
+    "navigationBarTextStyle": {
+      "type": "string",
+      "enum": [
+        "black",
+        "white"
+      ]
+    },
+    "navigationBarTitleText": {
+      "type": "string"
+    },
+    "navigationStyle": {
+      "type": "string",
+      "enum": [
+        "default",
+        "custom"
+      ]
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "backgroundTextStyle": {
+      "type": "string",
+      "enum": [
+        "dark",
+        "light"
+      ]
+    },
+    "enablePullDownRefresh": {
+      "type": "boolean"
+    },
+    "onReachBottomDistance": {
+      "type": "number"
+    },
+    "pageOrientation": {
+      "type": "string",
+      "enum": [
+        "auto",
+        "portrait",
+        "landscape"
+      ]
+    },
+    "disableScroll": {
+      "type": "boolean"
+    },
+    "usingComponents": {
+      "type": "object",
+      "patternProperties": {
+        "": {
+          "type": "string"
+        }
+      }
+    },
+    "style": {
+      "type": "string"
+    }
+  }
+}

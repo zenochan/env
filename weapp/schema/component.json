@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "component"
+  ],
+  "properties": {
+    "component": {
+      "type": "boolean",
+      "enum": [
+        true
+      ]
+    },
+    "usingComponents": {
+      "type": "object",
+      "patternProperties": {
+        "": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
