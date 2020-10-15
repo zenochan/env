@@ -1,4 +1,6 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "小程序 app.json",
   "type": "object",
   "required": [
     "pages",
@@ -9,7 +11,9 @@
       "type": "boolean"
     },
     "pages": {
+      "description": "注册小程序页面",
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "type": "string"
       }
@@ -69,6 +73,7 @@
           ]
         },
         "navigationBarTitleText": {
+          "description": "小程序名称",
           "type": "string"
         },
         "navigationStyle": {
@@ -136,7 +141,8 @@
                 "type": "string"
               },
               "text": {
-                "type": "string"
+                "type": "string",
+                "description": "标签"
               },
               "iconPath": {
                 "type": "string"

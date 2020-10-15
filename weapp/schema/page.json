@@ -35,10 +35,12 @@
       "type": "boolean"
     },
     "onReachBottomDistance": {
+      "description": "触发加载更多的距离",
       "type": "number"
     },
     "pageOrientation": {
       "type": "string",
+      "description": "屏幕方向",
       "enum": [
         "auto",
         "portrait",
@@ -46,10 +48,12 @@
       ]
     },
     "disableScroll": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "不允许滚动"
     },
     "usingComponents": {
       "type": "object",
+      "description": "注册组件",
       "patternProperties": {
         "": {
           "type": "string"

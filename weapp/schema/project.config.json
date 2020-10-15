@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "packOptions": {
+      "type": "object",
+      "properties": {
+        "ignore": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "folder",
+                  "file"
+                ]
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "appid": {
+      "type": "string"
+    },
+    "projectname": {
+      "type": "string"
+    }
+  }
+}
+
