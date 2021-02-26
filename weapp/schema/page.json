@@ -32,7 +32,8 @@
       ]
     },
     "enablePullDownRefresh": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "onReachBottomDistance": {
       "description": "触发加载更多的距离",
